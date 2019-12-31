@@ -1,9 +1,13 @@
 const regex = new RegExp(/(.*docs.microsoft.com\/)([a-z][a-z]\-[a-z][a-z]]*)(\/.*)/);
-const str = `https://docs.microsoft.com/cs-cz/aspnet/core/mvc/views/tag-helpers/authoring?view=aspnetcore-3.1`;
-let m;
 
 function getFirstGroup(regexp, str) {
-    return Array.from(str.matchAll(regexp), m => m[2]);
+    return Array.from(str.matchAll(regexp), m => {
+      if (m.length > 2){
+        return m[2]
+      } else{
+        return [];
+      };
+    });
   }
 
 chrome.webRequest.onBeforeRequest.addListener(

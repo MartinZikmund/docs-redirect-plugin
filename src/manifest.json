@@ -1,6 +1,6 @@
 {
   "name": "Docs.com Redirect to en-US",
-  "version": "1.0",
+  "version": "0.1",
   "description": "Auto-redirect to en-US version of Microsoft Docs.",
   "permissions": ["background", "tabs", "webRequest", "webRequestBlocking", "*://docs.microsoft.com/*"],
   "background": {

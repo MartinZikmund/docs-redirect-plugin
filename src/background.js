@@ -1,4 +1,4 @@
-const regex = new RegExp(/(.*docs.microsoft.com\/)([a-z][a-z]\-[a-z][a-z]]*)(\/.*)/);
+const regex = /(.*docs.microsoft.com\/)([a-z][a-z]\-[a-z][a-z]]*)(\/.*)/g;
 
 function getFirstGroup(regexp, str) {
     return Array.from(str.matchAll(regexp), m => {

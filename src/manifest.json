@@ -1,8 +1,8 @@
 {
-  "name": "Docs.com Redirect to en-US",
-  "version": "0.2",
-  "description": "Auto-redirect to en-US version of Microsoft Docs.",
-  "permissions": ["background", "tabs", "webRequest", "webRequestBlocking", "*://docs.microsoft.com/*"],
+  "name": "Microsoft Docs and Learn Redirect to en-US",
+  "version": "0.3",
+  "description": "Auto-redirect to en-US version of Microsoft Docs and Microsoft Learn.",
+  "permissions": ["background", "tabs", "webRequest", "webRequestBlocking", "*://docs.microsoft.com/*", "*://learn.microsoft.com/*"],
   "background": {
     "scripts": ["background.js"],
     "persistent": true
